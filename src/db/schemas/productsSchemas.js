@@ -20,6 +20,9 @@ const productSchema = new Schema(
     color: {
       type: String,
     },
+    globalCategory: {
+      type: String,
+    },
     category: {
       type: String,
     },

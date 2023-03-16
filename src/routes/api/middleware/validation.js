@@ -38,4 +38,9 @@ const updateProduct = Joi.object({
   popularity: Joi.number().min(-999).max(999999),
 })
 
-module.exports = { product, updateProduct }
+const login = Joi.object({
+  login: Joi.string().min(1).max(99),
+  password: Joi.string().min(1).max(99),
+})
+
+module.exports = { product, updateProduct, login }

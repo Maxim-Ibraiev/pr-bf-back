@@ -47,6 +47,7 @@ const productSchema = new Schema(
     },
   },
   {
+    bufferTimeoutMS: 300000,
     timestamps: true,
     toJSON: {
       transform: (_, ret) => {

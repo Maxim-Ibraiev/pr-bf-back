@@ -17,8 +17,8 @@ const productSchema = new Schema(
     model: {
       type: String,
     },
-    color: {
-      type: String,
+    colors: {
+      type: [String],
     },
     globalCategory: {
       type: String,
@@ -30,11 +30,8 @@ const productSchema = new Schema(
       type: [{ original: String, thumbnail: String, color: [String] }],
       require: [true, 'Image is required'],
     },
-    season: {
-      type: String,
-    },
-    size: {
-      type: Object,
+    sizes: {
+      type: [String],
       default: {},
     },
     material: {

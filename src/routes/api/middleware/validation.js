@@ -3,7 +3,7 @@ const Joi = require('joi')
 const images = Joi.array().items(
   Joi.object({
     original: Joi.string().min(1).max(999),
-    thumbnail: Joi.string().min(1).max(999),
+    thumbnail: Joi.string().min(1).max(9999),
     color: Joi.array().min(1).max(99),
   })
 )

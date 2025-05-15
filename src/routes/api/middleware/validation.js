@@ -21,6 +21,7 @@ const product = Joi.object({
   material: Joi.array().min(1).max(99),
   season: Joi.string().min(3).max(999),
   popularity: Joi.number().min(-999).max(999999),
+  creator: Joi.string().min(0).max(99).optional(),
 })
 
 const updateProduct = Joi.object({
@@ -36,6 +37,7 @@ const updateProduct = Joi.object({
   category: Joi.string().min(3).max(999),
   season: Joi.string().min(3).max(999),
   popularity: Joi.number().min(-999).max(999999),
+  creator: Joi.string().min(0).max(99).optional(),
 })
 
 const login = Joi.object({

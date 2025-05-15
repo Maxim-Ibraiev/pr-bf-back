@@ -42,6 +42,10 @@ const productSchema = new Schema(
       type: Number,
       default: 0,
     },
+    creator: {
+      type: String,
+      default: '',
+    },
   },
   {
     bufferTimeoutMS: 300000,
